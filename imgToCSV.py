@@ -3,7 +3,7 @@ import os
 
 fields = ['img', 'label']
 #have to cahnge to match your path
-directory = ('C:\\Users\\maxsc\\OneDrive\\Documents\\GitHub\COMP472_Ai_Project\\Train\\angry')
+directory = ('C:\\Users\\maxsc\\OneDrive\\Documents\\GitHub\COMP472_Ai_Project\\Train\\Angry')
 #csv file to write labelled images to
 filename = "labelledImages.csv"
 
@@ -18,7 +18,7 @@ with open(filename, 'w') as csvfile:
         f = os.path.join(directory, filename)
 
         if os.path.isfile(f):
-            writer.writerow({filename, 'angry'})
+            writer.writerow({filename, 'Angry'})
 
 
 
